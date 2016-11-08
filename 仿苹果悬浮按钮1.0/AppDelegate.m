@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JYTabBarViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    JYTabBarViewController *tabBarVc = [[JYTabBarViewController alloc] init];
+    _window.rootViewController = tabBarVc;
+    [_window makeKeyAndVisible];
     return YES;
 }
 
