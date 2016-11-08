@@ -11,8 +11,10 @@
 		C4E5DCAC1DD162B30056DC12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E5DCAB1DD162B30056DC12 /* AppDelegate.m */; };
 		C4E5DCAF1DD162B30056DC12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E5DCAE1DD162B30056DC12 /* ViewController.m */; };
 		C4E5DCB21DD162B30056DC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E5DCB01DD162B30056DC12 /* Main.storyboard */; };
-		C4E5DCB41DD162B30056DC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E5DCB31DD162B30056DC12 /* Assets.xcassets */; };
 		C4E5DCB71DD162B30056DC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E5DCB51DD162B30056DC12 /* LaunchScreen.storyboard */; };
+		C4E5DCC01DD163170056DC12 /* JYSuspensionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E5DCBF1DD163170056DC12 /* JYSuspensionBtn.m */; };
+		C4E5DCC41DD164100056DC12 /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E5DCC31DD164100056DC12 /* UIView+NTES.m */; };
+		C4E5DCC61DD16BD20056DC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E5DCC51DD16BD20056DC12 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +25,13 @@
 		C4E5DCAD1DD162B30056DC12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C4E5DCAE1DD162B30056DC12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C4E5DCB11DD162B30056DC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C4E5DCB31DD162B30056DC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E5DCB61DD162B30056DC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E5DCB81DD162B30056DC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E5DCBE1DD163170056DC12 /* JYSuspensionBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSuspensionBtn.h; sourceTree = "<group>"; };
+		C4E5DCBF1DD163170056DC12 /* JYSuspensionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSuspensionBtn.m; sourceTree = "<group>"; };
+		C4E5DCC21DD164100056DC12 /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTES.h"; sourceTree = "<group>"; };
+		C4E5DCC31DD164100056DC12 /* UIView+NTES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NTES.m"; sourceTree = "<group>"; };
+		C4E5DCC51DD16BD20056DC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,17 @@
 		C4E5DCA61DD162B30056DC12 /* 仿苹果悬浮按钮1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				C4E5DCC11DD164010056DC12 /* Categorys */,
 				C4E5DCAA1DD162B30056DC12 /* AppDelegate.h */,
 				C4E5DCAB1DD162B30056DC12 /* AppDelegate.m */,
 				C4E5DCAD1DD162B30056DC12 /* ViewController.h */,
 				C4E5DCAE1DD162B30056DC12 /* ViewController.m */,
+				C4E5DCBE1DD163170056DC12 /* JYSuspensionBtn.h */,
+				C4E5DCBF1DD163170056DC12 /* JYSuspensionBtn.m */,
 				C4E5DCB01DD162B30056DC12 /* Main.storyboard */,
-				C4E5DCB31DD162B30056DC12 /* Assets.xcassets */,
 				C4E5DCB51DD162B30056DC12 /* LaunchScreen.storyboard */,
 				C4E5DCB81DD162B30056DC12 /* Info.plist */,
+				C4E5DCC51DD16BD20056DC12 /* Assets.xcassets */,
 				C4E5DCA71DD162B30056DC12 /* Supporting Files */,
 			);
 			path = "仿苹果悬浮按钮1.0";
@@ -77,6 +86,15 @@
 				C4E5DCA81DD162B30056DC12 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4E5DCC11DD164010056DC12 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				C4E5DCC21DD164100056DC12 /* UIView+NTES.h */,
+				C4E5DCC31DD164100056DC12 /* UIView+NTES.m */,
+			);
+			name = Categorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E5DCB71DD162B30056DC12 /* LaunchScreen.storyboard in Resources */,
-				C4E5DCB41DD162B30056DC12 /* Assets.xcassets in Resources */,
+				C4E5DCC61DD16BD20056DC12 /* Assets.xcassets in Resources */,
 				C4E5DCB21DD162B30056DC12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E5DCC41DD164100056DC12 /* UIView+NTES.m in Sources */,
 				C4E5DCAF1DD162B30056DC12 /* ViewController.m in Sources */,
 				C4E5DCAC1DD162B30056DC12 /* AppDelegate.m in Sources */,
+				C4E5DCC01DD163170056DC12 /* JYSuspensionBtn.m in Sources */,
 				C4E5DCA91DD162B30056DC12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
